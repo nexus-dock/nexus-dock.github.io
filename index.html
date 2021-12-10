@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>nexus doc</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><h1 id="nexus">Nexus</h1>
+<p>Nexus is a peer-to-peer Micro Social Network.</p>
+<ul>
+<li><a href="#overview">Overview</a></li>
+<li><a href="#display-a-nexus">Display a Nexus</a></li>
+<li><a href="#create-a-nexus">Create a Nexus</a></li>
+<li><a href="#contribute">Contribute</a></li>
+</ul>
+<p>This readme is a work in progress!</p>
+<h2 id="overview">Overview</h2>
+<h3 id="set-paths">Set Paths</h3>
+<p>A Nexus instance has 1 author and up to 100 threads.<br>
+We lead many lives. Each thread can be dedicated to one of those.</p>
+<h3 id="focus-on-quality">Focus on Quality</h3>
+<p>A thread has only 1 local content.<br>
+The idea is to make that single content worthwile, and to keep it up-to-date instead of piling archives.<br>
+No infinite scroll.<br>
+No stressing out about what you may have wrote 2 years ago.</p>
+<h3 id="connect-and-discover">Connect And Discover</h3>
+<p>A thread can be connected up to 100 other Nexus instances.<br>
+Curate what will go along with your content.<br>
+Follow links from one Nexus instance to the next.</p>
+<h3 id="own-your-data">Own your Data</h3>
+<p>There is no cental platform.<br>
+Down to the core, a Nexus instance is simply structured text data, contained in a single file.<br>
+It can be hosted anywhere, as long as the server allows for external requests.</p>
+<h3 id="run-it-everywhere">Run it Everywhere</h3>
+<p>The Viewer and Editor apps are hosted on a Content Delivery Network and run in browser.<br>
+They can be embedded in any html page.</p>
+<h3 id="make-it-yours">Make it yours</h3>
+<p>This project is open source.<br>
+Only the protocol shall remains.<br>
+The apps are themable, forkable, replaceable.</p>
+<h2 id="display-a-nexus">Display a Nexus</h2>
+<h3 id="principle">Principle</h3>
+<p>A code snipped must be copy/pasted in an html page; just like you would do to embed a Youtube video, for example.</p>
+<h3 id="app-snippet">App Snippet</h3>
+<p>When you visit a Nexus, a related code snippet is made available: click <code>&lt;/&gt;</code> at the bottom of the page.<br>
+You’ll find the current Url and Id there too.</p>
+<p>Here is the template.</p>
+<h4 id="data-src">data-src</h4>
+<p>Specify here the URL of the Nexus file you wish to display.</p>
+<h4 id="data-id">data-id</h4>
+<p>Specify here the Id of the thread you wish to display.</p>
+<h4 id="data-style">data-style</h4>
+<p>Specify here the Url of the theme you wish to use.<br>
+If you’re fine with the default theme, <em>you can omit this parameter</em>.</p>
+<h4 id="data-lang">data-lang</h4>
+<p>Specify here the default language the app should use.<br>
+Note that if you pick another language through the interface, this choice will be cached and prefered over the default setting.<br>
+Currently supported languages: en, fr.<br>
+Additionnal translations are much welcomed!</p>
+<pre class=" language-html"><code class="prism  language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Nexus<span class="token punctuation">"</span></span> 
+<span class="token attr-name">data-src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>https://website.xyz/nexus.json<span class="token punctuation">"</span></span>
+<span class="token attr-name">data-id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>p021dh0t<span class="token punctuation">"</span></span> 
+<span class="token attr-name">data-</span><span class="token style-attr language-css"><span class="token attr-name"><span class="token attr-name">style</span></span><span class="token punctuation">="</span><span class="token attr-value"><span class="token property">https</span><span class="token punctuation">:</span>//i-is-as-i-does<span class="token number">.</span>github<span class="token number">.</span>io/Nexus/assets/css/NexusI<span class="token number">.</span>min<span class="token number">.</span>css</span><span class="token punctuation">"</span></span> 
+<span class="token attr-name">data-lang</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>en<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> 
+<span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>https://cdn.jsdelivr.net/gh/I-is-as-I-does/Nexus@latest/dist/js/NxIO.js<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token script language-javascript">
+</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+
+<h2 id="create-a-nexus">Create a Nexus</h2>
+<p>Coming Soon!</p>
+
+<h2 id="contribute">Contribute</h2>
+<h3 id="guidelines">Guidelines</h3>
+<p>All kind of contributions are very much welcomed: additionnal translations, themes, apps, fixes, etc.!<br>
+More informations available soon.</p>
+<h3 id="license">License</h3>
+<p>This project is open source, under the GNU AGPLv3 License.</p>
+<p>In a nutshell: you’re free to use it, modify it, distribute it, as long as you: disclose source, state changes if any, keep it under the same license, and preserve copyright mentions.</p>
+<h3 id="github-repository">Github Repository</h3>
+<p>Over <a href="https://github.com/I-is-as-I-does/Nexus" target="_blank">here</a>!</p>
+</div>
+</body>
+
+</html>
