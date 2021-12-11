@@ -10,12 +10,21 @@
 
 <body class="stackedit">
   <div class="stackedit__html"><h1 id="nexus">Nexus</h1>
+<p>| en |</p>
 <p>Nexus is a peer-to-peer Micro Social Network.</p>
 <ul>
 <li><a href="#overview">Overview</a></li>
 <li><a href="#display-a-nexus">Display a Nexus</a></li>
 <li><a href="#create-a-nexus">Create a Nexus</a></li>
 <li><a href="#contribute">Contribute</a></li>
+</ul>
+<p>| fr |</p>
+<p>Nexus est un Micro Réseau Social de pair-à-pair.</p>
+<ul>
+<li><a href="#overview">Vue d’ensemble</a></li>
+<li><a href="#display-a-nexus">Afficher un Nexus</a></li>
+<li><a href="#create-a-nexus">Créer un Nexus</a></li>
+<li><a href="#contribute">Contribuer</a></li>
 </ul>
 <p>This readme is a work in progress!</p>
 <h2 id="overview">Overview</h2>
@@ -24,47 +33,45 @@
 We lead many lives. Each thread can be dedicated to one of those.</p>
 <h3 id="focus-on-quality">Focus on Quality</h3>
 <p>A thread has only 1 local content.<br>
-The idea is to make that single content worthwile, and to keep it up-to-date instead of piling archives.<br>
+Make that single content worthwile and up-to-date instead of piling archives.<br>
 No infinite scroll.<br>
 No stressing out about what you may have wrote 2 years ago.</p>
-<h3 id="connect-and-discover">Connect And Discover</h3>
+<h3 id="connect-and-discover">Connect and Discover</h3>
 <p>A thread can be connected up to 100 other Nexus instances.<br>
 Curate what will go along with your content.<br>
 Follow links from one Nexus instance to the next.</p>
 <h3 id="own-your-data">Own your Data</h3>
-<p>There is no cental platform.<br>
+<p>There is no central platform.<br>
 Down to the core, a Nexus instance is simply structured text data, contained in a single file.<br>
 It can be hosted anywhere, as long as the server allows for external requests.</p>
 <h3 id="run-it-everywhere">Run it Everywhere</h3>
 <p>The Viewer and Editor apps are hosted on a Content Delivery Network and run in browser.<br>
 They can be embedded in any html page.</p>
-<h3 id="make-it-yours">Make it yours</h3>
+<h3 id="shapeshift-anything">Shapeshift Anything</h3>
 <p>This project is open source.<br>
 Only the protocol shall remains.<br>
 The apps are themable, forkable, replaceable.</p>
 <h2 id="display-a-nexus">Display a Nexus</h2>
-<h3 id="principle">Principle</h3>
-<p>A code snipped must be copy/pasted in an html page; just like you would do to embed a Youtube video, for example.</p>
+<p>You can display a Nexus instance even if you don’t have one yourself.<br>
+It only requires to copy/paste a code snippet  inside the <code>body</code> tags of an html page.</p>
 <h3 id="app-snippet">App Snippet</h3>
+<p><img src="https://nexus-dock.github.io/img/nx-copy-snippet.gif" alt="Copy Snippet in App"></p>
 <p>When you visit a Nexus, a related code snippet is made available: click <code>&lt;/&gt;</code> at the bottom of the page.<br>
-You’ll find the current Url and Id there too.</p>
-<p>Here is the template.</p>
-<h4 id="data-src">data-src</h4>
-<p>Specify here the URL of the Nexus file you wish to display.</p>
-<h4 id="data-id">data-id</h4>
-<p>Specify here the Id of the thread you wish to display.</p>
-<h4 id="data-style">data-style</h4>
-<p>Specify here the Url of the theme you wish to use.<br>
-If you’re fine with the default theme, <em>you can omit this parameter</em>.</p>
-<h4 id="data-lang">data-lang</h4>
-<p>Specify here the default language the app should use.<br>
-Note that if you pick another language through the interface, this choice will be cached and prefered over the default setting.<br>
-Currently supported languages: en, fr.<br>
-Additionnal translations are much welcomed!</p>
+The first text area display the current Nexus Url and thread Id.<br>
+The second contains the snippet.<br>
+Click <code>⧉</code> to automatically copy it in your clipboard.<br>
+Paste it in your page and voilà!</p>
+<h4 id="in-wordpress">In Wordpress</h4>
+<p>Edit the blog post or page where you want to display the Nexus.<br>
+Add a new code block.<br>
+Paste the code snippet in the text area of the block.</p>
+<p><img src="https://nexus-dock.github.io/img/wp-add-code-block.gif" alt="Paste Snippet in Wordpress"><br>
+<a href="https://www.wpbeginner.com/wp-tutorials/how-to-easily-display-code-on-your-wordpress-site/" target="_blank">source</a></p>
+<h3 id="template">Template</h3>
 <pre class=" language-html"><code class="prism  language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Nexus<span class="token punctuation">"</span></span> 
 <span class="token attr-name">data-src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>https://website.xyz/nexus.json<span class="token punctuation">"</span></span>
-<span class="token attr-name">data-id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>p021dh0t<span class="token punctuation">"</span></span> 
-<span class="token attr-name">data-</span><span class="token style-attr language-css"><span class="token attr-name"><span class="token attr-name">style</span></span><span class="token punctuation">="</span><span class="token attr-value"><span class="token property">https</span><span class="token punctuation">:</span>//i-is-as-i-does<span class="token number">.</span>github<span class="token number">.</span>io/Nexus/assets/css/NexusI<span class="token number">.</span>min<span class="token number">.</span>css</span><span class="token punctuation">"</span></span> 
+<span class="token attr-name">data-id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>thread-id<span class="token punctuation">"</span></span> 
+<span class="token attr-name">data-</span><span class="token style-attr language-css"><span class="token attr-name"><span class="token attr-name">style</span></span><span class="token punctuation">="</span><span class="token attr-value"><span class="token property">https</span><span class="token punctuation">:</span>//cdn<span class="token number">.</span>jsdelivr<span class="token number">.</span>net/gh/I-is-as-I-does/Nexus@latest/dist/css/NexusI<span class="token number">.</span>min<span class="token number">.</span>css</span><span class="token punctuation">"</span></span> 
 <span class="token attr-name">data-lang</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>en<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
 
@@ -72,10 +79,33 @@ Additionnal translations are much welcomed!</p>
 <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>https://cdn.jsdelivr.net/gh/I-is-as-I-does/Nexus@latest/dist/js/NxIO.js<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token script language-javascript">
 </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
 </code></pre>
-
+<h3 id="tags-and-attributes">Tags and Attributes</h3>
+<p><code>div id="Nexus"</code><br>
+This is the app container.<br>
+The <code>id</code> allows the app to locate it on the page.</p>
+<p><code>script src</code><br>
+This is the link loading the app.<br>
+By default, it loads the latest build of the app, hosted on a CDN.<br>
+If you prefer to load another build, or to load it from your own server, feel free to change the <code>src</code>.</p>
+<h3 id="parameters">Parameters</h3>
+<p><code>data-src</code><br>
+Specify here the Url of the Nexus file you wish to display.</p>
+<p>If the page containing the snippet is on the same server than the Nexus file, it can be a relative path; for example: <code>source/nexus.json</code>. Otherwise, it must be an absolute path starting with <code>http://</code> (or <code>https://</code>).</p>
+<p><code>data-id</code><br>
+Specify here the Id of the thread you wish to display.<br>
+It can be omitted; a list of available threads is displayed in the Viewer app.</p>
+<p><code>data-style</code><br>
+Specify here the Url of the theme you wish to use.<br>
+If you’re fine with the default theme, you can omit this parameter.</p>
+<p>If the page containing the snippet is on the same server than the theme file, it can be a relative path; for example: <code>assets/theme.css</code>. Otherwise, it must be an absolute path starting with <code>http://</code> (or <code>https://</code>).</p>
+<p><code>data-lang</code><br>
+Specify here the default language the app should use.<br>
+If omitted, the app will look for the page’s language, or fallback to english.</p>
+<p>Note that if you pick another language through the interface, this choice will be cached and preferred over the default setting.</p>
+<p>Currently supported languages: <code>en</code>, <code>fr</code>.<br>
+Additionnal translations are much welcomed!</p>
 <h2 id="create-a-nexus">Create a Nexus</h2>
 <p>Coming Soon!</p>
-
 <h2 id="contribute">Contribute</h2>
 <h3 id="guidelines">Guidelines</h3>
 <p>All kind of contributions are very much welcomed: additionnal translations, themes, apps, fixes, etc.!<br>
