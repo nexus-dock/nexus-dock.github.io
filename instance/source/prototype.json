@@ -23,7 +23,7 @@
       "linked": [
         {
           "url": "https://nexus-dock.github.io/instance/source/registry.json",
-          "id": "/"
+          "id": "registry"
         }
       ]
     },
