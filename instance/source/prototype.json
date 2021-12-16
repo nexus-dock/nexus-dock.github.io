@@ -22,8 +22,20 @@
       },
       "linked": [
         {
-          "url": "https://nexus-dock.github.io/instance/source/registry.json",
-          "id": "registry"
+          "url": "https://nexus-dock.github.io/instance/source/legion.json",
+          "id": "gestalt-consciousness"
+        },
+        {
+          "url": "https://nexus-dock.github.io/instance/source/legion.json",
+          "id": "meditation"
+        },
+        {
+          "url": "https://nexus-dock.github.io/instance/source/legion.json",
+          "id": "ffu65-25PKdd"
+        },
+        {
+          "url": "https://nexus-dock.github.io/instance/source/legion.json",
+          "id": "/"
         }
       ]
     },
@@ -43,20 +55,8 @@
       },
       "linked": [
         {
-          "url": "https://nexus-dock.github.io/instance/source/legion.json",
-          "id": "gestalt-consciousness"
-        },
-        {
-          "url": "https://nexus-dock.github.io/instance/source/legion.json",
-          "id": "meditation"
-        },
-        {
-          "url": "https://nexus-dock.github.io/instance/source/legion.json",
-          "id": "ffu65-25PKdd"
-        },
-        {
-          "url": "https://nexus-dock.github.io/instance/source/legion.json",
-          "id": "/"
+          "url": "https://nexus-dock.github.io/instance/source/registry.json",
+          "id": "registry"
         }
       ]
     }
