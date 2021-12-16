@@ -5,6 +5,7 @@ This is the documentation repository.
   
 Documentation website: [nexus-dock.github.io](https://nexus-dock.github.io/)   
 Demo: [nexus-dock.github.io/instance](https://nexus-dock.github.io/instance)  
+Editor: [nexus-dock.github.io/instance/?new](https://nexus-dock.github.io/instance/?new)  
 
 Code repository: [I-is-as-I-does/Nexus](https://github.com/I-is-as-I-does/Nexus) 
   
