@@ -1,0 +1,28 @@
+{
+    "nexus": "https://nexus-dock.github.io/",
+    "author": {
+      "handle": "Nexus Dock",
+      "about": "Nexus is a peer-to-peer Micro Social Network.",
+      "url": "https://nexus-dock.github.io/"
+    },
+    "threads": [
+      {
+        "id": "registry",
+        "title": "Registry",
+        "description": "",
+        "content": {
+          "timestamp": "2021-12-16T17:55",
+          "main": "Nexus Instances",
+          "aside": "",
+          "media": {
+          }
+        },
+        "linked": [
+          {
+            "url": "https://nexus-dock.github.io/instance/source/mondes-heureux.json",
+            "id": "TRANSMISSIONS-VEGETALES"
+          }
+        ]
+      }
+    ]
+  }

@@ -10,4 +10,4 @@ Editor: [nexus-dock.github.io/instance/?new](https://nexus-dock.github.io/instan
 Code repository: [I-is-as-I-does/Nexus](https://github.com/I-is-as-I-does/Nexus) 
   
 Apache starter kit: [I-is-as-I-does/Nexus-Apache-starter](https://github.com/I-is-as-I-does/Nexus-Apache-starter)  
-Github Pages starter kit: [I-is-as-I-does/Nexus-Github-starter](https://github.com/I-is-as-I-does/Nexus-Github-starter) [to be done]
+GitHub Pages starter kit: [I-is-as-I-does/Nexus-Github-starter](https://github.com/I-is-as-I-does/Nexus-Github-starter)

@@ -1,0 +1,31 @@
+{
+    "nexus": "https://nexus-dock.github.io/",
+    "author": {
+      "handle": "Mondes-Heureux",
+      "about": "Je cherche des contre-modèles aux courants dominants de l’art et de la culture actuels. Je travaille particulièrement sur la logique, la critique du post-modernisme, sur les sentiments et l’écologie.",
+      "url": "https://mondesheureux.net"
+    },
+    "threads": [
+      {
+        "id": "TRANSMISSIONS-VEGETALES",
+        "title": "TRANSMISSIONS VEGETALES",
+        "description": "Transmissions Végétales est une recherche artistique sur les relations plantes- humains. Elle s’intéresse à la nature et à la profondeur des liens qui unissent les humains aux plantes, à la manière dont les plantes participent silencieusement à notre vie.",
+        "content": {
+          "timestamp": "2021-12-16T15:04",
+          "main": "ELLIPSE\nLa vie est pleine de moments de rien, de latence, des moments pas intéressant. L'ellipse restaure une continuité entre des moments disparates et pleinement vécus.",
+          "aside": "",
+          "media": {
+            "url": "https://mondesheureux.files.wordpress.com/2021/12/ellipse.jpg?w=1024",
+            "type": "page",
+            "caption": ""
+          }
+        },
+        "linked": [
+          {
+            "url": "https://nexus-dock.github.io/instance/source/registry.json",
+            "id": "/"
+          }
+        ]
+      }
+    ]
+  }
