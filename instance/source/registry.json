@@ -17,12 +17,7 @@
           "media": {
           }
         },
-        "linked": [
-          {
-            "url": "https://nexus-dock.github.io/instance/source/mondes-heureux.json",
-            "id": "TRANSMISSIONS-VEGETALES"
-          }
-        ]
+        "linked": ["https://nexus-dock.github.io/instance/source/demo.json#Thread-I"]
       }
     ]
   }

@@ -1,0 +1,74 @@
+{
+    "nexus": "https://nexus-dock.github.io/",
+    "author": {
+        "handle": "Demo",
+        "about": "I'm a paragraph about the author",
+        "url": "https://nexus-dock.github.io/"
+    },
+    "threads": [
+        {
+            "id": "Thread-I",
+            "title": "I'm a Thread Title",
+            "description": "Thread description comes here.",
+            "content": {
+                "timestamp": "2021-12-12T00:12",
+                "main": "Main field of the thread content.",
+                "aside": "Aside field of the thread content.",
+                "media": {
+                    "url": "https://en.wikipedia.org/wiki/Special:Random",
+                    "type": "page",
+                    "caption": "Caption field"
+                }
+            },
+            "linked": ["https://nexus-dock.github.io/instance/source/registry.json#registry"]
+        },
+        {
+            "id": "img-demo",
+            "title": "Image Demo Thread",
+            "description": "img demo is img demo",
+            "content": {
+                "timestamp": "2021-12-12T00:12",
+                "main": "Much img demo",
+                "aside": "",
+                "media": {
+                    "url": "https://nexus-dock.github.io/instance/media/test-image.gif",
+                    "type": "image",
+                    "caption": "such img"
+                }
+            },
+            "linked": []
+        },
+        {
+            "id": "audio-demo",
+            "title": "Audio Demo Thread",
+            "description": "audio demo is audio demo",
+            "content": {
+                "timestamp": "2021-12-12T00:12",
+                "main": "Much audio demo",
+                "aside": "",
+                "media": {
+                    "url": "https://nexus-dock.github.io/instance/media/test-audio.mp3",
+                    "type": "audio",
+                    "caption": "such audio"
+                }
+            },
+            "linked": []
+        },
+        {
+            "id": "video-demo",
+            "title": "Video Demo Thread",
+            "description": "video demo is video demo",
+            "content": {
+                "timestamp": "2021-12-12T00:12",
+                "main": "Much video demo",
+                "aside": "",
+                "media": {
+                    "url": "https://nexus-dock.github.io/instance/media/test-video.mp4",
+                    "type": "video",
+                    "caption": "such video"
+                }
+            },
+            "linked": []
+        }
+    ]
+}

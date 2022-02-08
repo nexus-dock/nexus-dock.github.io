@@ -40,16 +40,19 @@
     <main>
   <div class="doc-head">
       <h1 id="nexus">Nexus</h1>
-      <p>Nexus is a peer-to-peer Micro Social Network.<br>
-      <a href="https://nexus-dock.github.io/instance/" target="_blank">Demo</a></p>
+      <p>Nexus is a peer-to-peer Micro Social Network.</p>
       <ul class="doc-nav">
       <li><a>Discover</a></li>
-      <li><a>Navigate a Nexus</a></li>
-      <li><a>Display a Nexus</a></li>
-      <li><a>Create a Nexus</a></li>
+      <li><a>Display</a></li>
+      <li><a>Create</a></li>
       <li><a>Contribute</a></li>
       </ul>
-   
+      <h4>Demo</h4>
+      <p>Nexus IO:
+      <a href="https://nexus-dock.github.io/instance/" target="_blank">Reader</a>, 
+      <a href="https://nexus-dock.github.io/instance/?new" target="_blank">Editor</a><br>
+    Nexus Folio: 
+      <a href="https://nexus-dock.github.io/instance/nexus-folio.html" target="_blank">Reader</a></p>
     </div> 
       <div class="doc-body">
         <section id="discover" class="active">
@@ -78,38 +81,14 @@ It can be embedded in any html page.</p>
 Only the protocol shall remain.<br>
 The Nexus app is themable, forkable, replaceable.</p>
 </section>
-<section id="navigate-a-nexus">
-<h2>Navigate a Nexus</h2>
-<h3 id="modules">Modules</h3>
-<p><code>&lt; ≚ &gt;</code><br>
-History module.</p>
-<p><code>&lt;/&gt;</code><br>
-Snippets module.</p>
-<p><code>#index</code><br>
-Current Nexus author and threads list.</p>
-<p><code>#local</code><br>
-Current thread description and its content.</p>
-<p><code>#distant</code><br>
-Other threads and instances linked to the current local thread.<br>
-If there is more than one distant content, you can navigate them using <code>⊻</code> and <code>⊼</code>.</p>
-<h3 id="links">Links</h3>
-<p>Clicking on an author handle will load its Nexus.<br>
-To display a thread, pick one in the index list.<br>
-Thread links in the <code>distant</code> module will both load the distant Nexus and related thread.</p>
-<h3 id="hints">Hints</h3>
-<p>If a thread has <strong>not yet been visited</strong>, or if its content <strong>has been updated</strong> since your last visit, its link will be followed by an asterisk: <code>*</code>.</p>
-</section>
-<section id="display-a-nexus">
+<section id="display">
 <h2>Display a Nexus</h2>
 <h3 id="how-to">How-to</h3>
 <p>You can display a Nexus instance even if you don’t have one yourself.<br>
 It only requires to <strong>copy/paste a code snippet</strong>  inside the <code>body</code> tags of an html page.</p>
-<p><img src="https://nexus-dock.github.io/img/nx-copy-snippet.gif" alt="Copy Snippet in App"></p>
-<p>When you visit a Nexus, a related code snippet is made available: click <code>&lt;/&gt;</code> at the bottom of the page.<br>
-The first text area display the current Nexus url and thread id.<br>
-The second contains the snippet.<br>
-Click <code>⧉</code> to automatically copy it in your clipboard.<br>
-Paste it in your page and voilà!</p>
+<p>When you visit a Nexus, look for this symbol: <code>&lt;/&gt;</code>; click to expand.<br>
+The html snippet contains <code>div</code> and <code>script</code> tags.<br>
+Copy/paste its content in your page and voilà!</p>
 <p><strong>WordPress How-to</strong></p>
 <p>Edit the blog post or page where you want to display the Nexus.<br>
 Add a new code block.<br>
@@ -117,38 +96,37 @@ Paste the code snippet in the text area of the block.</p>
 <p><img src="https://nexus-dock.github.io/img/wp-add-code-block.gif" alt="Paste Snippet in Wordpress"><br>
 <a href="https://www.wpbeginner.com/wp-tutorials/how-to-easily-display-code-on-your-wordpress-site/" target="_blank">source</a></p>
 <h3 id="snippet">Snippet</h3>
-<pre class=" language-html"><code class="prism  language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Nexus<span class="token punctuation">"</span></span> 
-<span class="token attr-name">data-src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>https://website.xyz/nexus.json<span class="token punctuation">"</span></span>
-<span class="token attr-name">data-id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>thread-id<span class="token punctuation">"</span></span> 
-<span class="token attr-name">data-</span><span class="token style-attr language-css"><span class="token attr-name"><span class="token attr-name">style</span></span><span class="token punctuation">="</span><span class="token attr-value"><span class="token property">https</span><span class="token punctuation">:</span>//cdn<span class="token number">.</span>jsdelivr<span class="token number">.</span>net/gh/I-is-as-I-does/Nexus@latest/dist/css/NexusI<span class="token number">.</span>min<span class="token number">.</span>css</span><span class="token punctuation">"</span></span> 
-<span class="token attr-name">data-lang</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>en<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
 
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> 
-<span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>https://cdn.jsdelivr.net/gh/I-is-as-I-does/Nexus@latest/dist/js/NxIO.js<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token script language-javascript">
-</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+<p>Example</p>
+<pre><code>&lt;div id=&quot;Nexus&quot; 
+  data-src=&quot;https://website.xyz/nexus.json#thread-id&quot;
+  data-style=&quot;https://cdn.jsdelivr.net/gh/I-is-as-I-does/Nexus@latest/dist/css/NxIO.min.css&quot; 
+  data-lang=&quot;en&quot;&gt;
+&lt;/div&gt;
+&lt;script src="https://cdn.jsdelivr.net/gh/I-is-as-I-does/Nexus@latest/dist/js/NxIO.js"&gt;&lt;/script&gt;
 </code></pre>
 <p><code>div id="Nexus"</code><br>
 This is the app container.</p>
 <p><code>script src</code><br>
 This is the link loading the app.<br>
-By default, it loads the latest build of the app, hosted on a CDN.</p>
+By default, it loads the latest build of the default app, hosted on a CDN.</p>
 <blockquote>
-<p>If you prefer to load another build, or to load it from your own<br>
+<p>If you prefer to load another Nexus app, another build, or to load it from your own<br>
 server, feel free to change the <code>src</code>.</p>
 </blockquote>
-<h3 id="parameters">Parameters</h3>
+<h3 id="parameters">Attributes</h3>
 <p><code>data-src</code><br>
-Specify here  <strong>the url of the Nexus file</strong> you wish to display.</p>
+Required.<br>
+Specify here the url of the Nexus <strong>json file</strong> you wish to display.<br>
+Add <code>#some-thread-id</code> to target a specific thread.
+</p>
 <blockquote>
 <p>If the page containing the snippet is on the same server as the<br>
-Nexus file, it can be a relative path; for example <code>source/nexus.json</code>.<br>
+Nexus file, it can be a relative path; for example <code>source/nexus.json#first-thread</code>.<br>
 Otherwise, it must be an absolute path starting with <code>http://</code> (or <code>https://</code>).</p>
 </blockquote>
-<p><code>data-id</code><br>
-Specify here the <strong>id of the thread</strong> you wish to display.<br>
-It can be omitted; a list of available threads is displayed in the app.</p>
 <p><code>data-style</code><br>
+Optional.<br>
 Specify here the <strong>url of the theme</strong> you wish to use.<br>
 If you’re fine with the default theme, you can omit this parameter.</p>
 <blockquote>
@@ -156,15 +134,16 @@ If you’re fine with the default theme, you can omit this parameter.</p>
   Otherwise, it must be an absolute path starting with <code>http://</code> (or <code>https://</code>).</p>
 </blockquote>
 <p><code>data-lang</code><br>
+Optional.<br>
 Specify here the <strong>default language</strong> the app should use.<br>
 If omitted, the app will look for the page’s language, or fallback to English.</p>
 <blockquote>
 <p>Note that if another language is picked through the interface, this choice will be cached and preferred over the default setting.</p>
 </blockquote>
 <p>Currently <strong>supported languages</strong>: <code>en</code>, <code>fr</code>.<br>
-additional translations are much welcomed!</p>
+Additional translations are much welcomed!</p>
 </section>
-<section  id="create-a-nexus">
+<section  id="create">
 <h2>Create a Nexus</h2>
 <h3 id="starter-kits">Starter Kits</h3>
 <p>These starter kits are dead simple.<br>
@@ -186,7 +165,7 @@ GitHub Pages allow for external requests, and are free! This solution especially
 <li><strong>uploading</strong> it on a server – alongside media files if any.</li>
 </ul>
 <h3 id="open-the-editor">Open the Editor</h3>
-<p>On any page displaying a Nexus, you can <strong>load the Nexus Editor</strong> by adding <code>?new</code> to the address bar.</p>
+<p>On any page using the default app, Nexus IO, you can <strong>load a Nexus Editor</strong> by adding <code>?new</code> to the address bar.</p>
 <blockquote>
 <p>If the url already contains an <code>?</code>, type <code>&amp;new</code> instead.</p>
 </blockquote>
@@ -213,24 +192,24 @@ If something goes wrong – like external request failures, some information wil
 <p><code>[3-30]</code> for example indicates min. and max. characters.<br>
 <code>[http]</code> states that the url must start with <code>http://</code>.</p>
 </blockquote>
-<p>A valid field is marked with a  <code>✓</code>, an invalid one with a <code>✗</code>.<br>
+<p>A valid field is marked with a <code>✓</code>, an invalid one with a <code>✗</code>.<br>
 <strong>Make sure all your fields are valid</strong>, or your Nexus might not load at all.</p>
 <blockquote>
-<p>When you enter a Nexus url in a <code>linked threads</code> field, the app will load the data and generate a list of available <code>ids</code>. If it didn’t, there’s probably something wrong: either the link is broken, the distant Nexus data is invalid, or the request was refused.</p>
+<p>When you enter a Nexus url in a <code>linked threads</code> field, the app will check if it loads correctly. If the field gets marked as invalid, there’s probably something wrong: either the link is broken, the distant Nexus data is invalid, or the request was refused.</p>
 </blockquote>
-<p>Switch to the <strong>Preview Mode</strong> by clicking on the eye:  <span class="symbol"> <code>👁</code></span>.<br>
-Revert to the editor with the pen: <span class="symbol"><code>✎</code></span>.</p>
-<p><span class="symbol"><code>↶</code></span><span class="symbol"><code>↷</code></span> lets you undo / redo your actions (up to 10).</p>
-<p><span class="symbol"><code>⭯</code></span> reverts to the original data state.<br>
-<span class="symbol"><code>🗋</code></span> loads a new Nexus.<br>
-<span class="symbol"><code>🗁</code></span> allows you to load a Nexus .json file from your device.<br>
-<span class="symbol"><code>🖫</code></span> <strong>temporarily</strong> save the current state in your <strong>browser cache</strong>.</p>
+<p>Switch to the <strong>Preview Mode</strong> by clicking on the eye icon.<br>
+Revert to the editor with the pen icon.</p>
+<p>Back and forward arrows lets you undo / redo your actions (up to 10).</p>
+<p>Circling arrow will revert data to its original state.<br>
+File icon create a new Nexus.<br>
+Folder icon allows you to load a Nexus .json file from your device.<br>
+Save icon <strong>temporarily</strong> store the current state in your <strong>browser cache</strong>.</p>
 <blockquote>
 <p>IMPORTANT<br>
 If you clear up your browser cache, the data will be gone.<br>
 The cache is also domain dependent. If you edit your data from another website, the saved data will not be available.</p>
 </blockquote>
-<p><span class="symbol"><code>⇣</code></span> will generate a .json file and <strong>download it</strong> on your device.<br>
+<p>Downward arrow will generate a .json file and <strong>download it</strong> on your device.<br>
 This is the safe and sure way to save your Nexus data.</p>
 <h3 id="handle-media">Handle Media</h3>
 <p>If you wish to share media like images, MP3s or videos, you will need to <strong>upload</strong> those files on your server, or use <strong>external providers</strong>.<br>
@@ -238,7 +217,7 @@ Currently supported providers are Youtube, Vimeo and SoundCloud.</p>
 <p>The form will try to guess which type of media url you’re sharing and automatically set the media <code>Type</code> field. Just make sure it got it right!</p>
 <p>If you go the self-host route, please keep in mind that <strong>your media files should be compressed for the web</strong>. Videos and MP3s should be fine below 2 or 3MB, and images below 200KB.</p>
 <h3 id="publish">Publish</h3>
-<p>When you’re done editing your Nexus and all fields are valid, click <span class="symbol"><code>⇣</code></span>  to download your .json file.</p>
+<p>When you’re done editing your Nexus and all fields are valid, click the downward arrow to download your .json file.</p>
 <blockquote>
 <p>It is very highly recommended that the size of this file does not exceed 2MB.</p>
 </blockquote>
@@ -293,8 +272,8 @@ That way, it is super lightweight and super fast to load.<br>
 And you can use it for free.<br>
 But you can also <a href='https://ko-fi.com/I2I17EOYP' target='_blank'><strong>buy me a coffee</strong></a>!</p>
 
-<h3 id="repository">Repository</h3>
-<p>Source code is maintained and available over there:<br>
+<h3 id="repository">Hub Repository</h3>
+<p>You'll find distilled apps and a list of Nexus related repositories over there:<br>
 <a href="https://github.com/I-is-as-I-does/Nexus" target="_blank">github.com/I-is-as-I-does/Nexus</a></p>
 <h3 id="license">License</h3>
 <p>This project is open source, under the <a href="https://github.com/I-is-as-I-does/Nexus/tree/main/LICENSE" target="_blank">GNU AGPLv3 License</a>.</p>
