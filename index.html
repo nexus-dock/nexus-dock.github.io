@@ -190,7 +190,7 @@ If something goes wrong – like external request failures, some information wil
 <p>Indications between brackets are hints at the field requirement.</p>
 <blockquote>
 <p><code>[3-30]</code> for example indicates min. and max. characters.<br>
-<code>[http]</code> states that the url must start with <code>http://</code>.</p>
+<code>[http]</code> states that the url must be a valid <code>http</code> url.</p>
 </blockquote>
 <p>A valid field is marked with a <code>✓</code>, an invalid one with a <code>✗</code>.<br>
 <strong>Make sure all your fields are valid</strong>, or your Nexus might not load at all.</p>
@@ -206,11 +206,12 @@ Folder icon allows you to load a Nexus .json file from your device.<br>
 Save icon <strong>temporarily</strong> store the current state in your <strong>browser cache</strong>.</p>
 <blockquote>
 <p>IMPORTANT<br>
+If you configured your browser to prevent the use of local storage, there is no backup.<br>
 If you clear up your browser cache, the data will be gone.<br>
 The cache is also domain dependent. If you edit your data from another website, the saved data will not be available.</p>
 </blockquote>
 <p>Downward arrow will generate a .json file and <strong>download it</strong> on your device.<br>
-This is the safe and sure way to save your Nexus data.</p>
+This is the safe and sure way to <strong>save</strong> your Nexus data.</p>
 <h3 id="handle-media">Handle Media</h3>
 <p>If you wish to share media like images, MP3s or videos, you will need to <strong>upload</strong> those files on your server, or use <strong>external providers</strong>.<br>
 Currently supported providers are Youtube, Vimeo and SoundCloud.</p>
@@ -250,6 +251,14 @@ If you’re using one of the starter kits, <strong>everything is already set up<
 <li>download the .json when you’re done;</li>
 <li>publish it on your server alongside media if any.</li>
 </ul>
+<h3 id="cache">Clear Cache</h3>
+<p>If a thread has not yet been visited, or if its content has been updated since your last visit, its link will be followed by an asterisk: <code>*</code>.</p>  
+<p>To reset hints, <strong>clear the app cache</strong>. <br> 
+In your browser address bar, add <code>?clear</code> to the current url. <br> 
+If a query string is already present, use <code>&clear</code> instead.</p>  
+<p>This will <strong>not</strong> erase the editor local saves. <br> 
+To erase editor saves: in your browser address bar, add <code>&erase</code> to the current url. 
+</p> 
 </section>
 <section id="contribute">
 <h2>Contribute</h2>
