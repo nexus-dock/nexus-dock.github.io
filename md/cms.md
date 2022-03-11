@@ -10,6 +10,8 @@ Toss a coin to the dev:
 
 <a href='https://ko-fi.com/I2I17EOYP' target='_blank'><img width="145px" src='https://cdn.ko-fi.com/cdn/kofi2.png?v=3' alt='Buy Me a Coffee at ko-fi.com' /></a>
 
+---
+
 - [Install](#install)
   - [I'm an old dog](#im-an-old-dog)
   - [Step-by-step please](#step-by-step-please)
@@ -40,6 +42,8 @@ Toss a coin to the dev:
   - [11ty](#11ty)
     - [Build time](#build-time)
 - [About Nexus](#about-nexus)
+
+---
 
 ## Install
 
