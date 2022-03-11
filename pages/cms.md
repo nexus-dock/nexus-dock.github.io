@@ -198,11 +198,6 @@ You can change it to private, but will need to regenerate your Netlify token.
 - In `admin/config.yml`: add `local_backend: true`.   
 - Create a `_site/` folder.  
 
-You may want to disable the Netlify build status badge.
-- Open `.eleventy.js`,
-- search for the line `eleventyConfig.addGlobalData("onNetlify", true)`  
-- and set it to `false`.
-
 #### Serve
   
 - Launch dev server: `$ npm run serve`.  
