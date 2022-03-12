@@ -225,14 +225,14 @@ For a Nexus reader app to be compatible with the Nexus CMS live preview feature,
 > Git is a free and open source version control system.  
 > It maintains a history of all changes made to a set a files, usually called a repository.
 
-GitHub is a **repository hosting service** that provides a web-based graphical interface.  
+GitHub is a repository hosting service that provides a web-based graphical interface.  
 Their free tier is extremely generous with unlimited public and private repositories.
 
 This is where your source files will be stored.
 
 #### Storage limitations
 
-- Your repository should not exceed **1GB** in size.  
+- Your repository should not exceed 1GB in size.  
 - Each file must not exceed 25MB; this limit is stretched to 50MB if you're using git commands.  
 - Since Nexus CMS generates a website, a 2MB limit is implemented for video and audio files, 500KB for images.
     
@@ -241,7 +241,7 @@ Nexus apps also support YouTube, Vimeo and Soundcloud urls.
 
 ### Netlify
 
-Netlify is a **web hosting** and **automation** platform.  
+Netlify is a web hosting and automation platform.  
 Their free tier is perfectly fine for a Nexus CMS website.
 
 #### How it works
@@ -257,7 +257,7 @@ Their free tier is perfectly fine for a Nexus CMS website.
 
 Since the whole principle of Nexus is to connect your content to other live, self-hosted Nexus instances, the Nexus part of the page is still built on-the-fly, and not pre-rendered.  
 
-The focus of Nexus CMS is more on the *self-hosted* matter. This solution offers a simple, seamless way to create, edit and **auto-deploy** Nexus instances.  
+The focus of Nexus CMS is more on the *self-hosted* matter. This solution offers a simple, seamless way to create, edit and auto-deploy Nexus instances.  
 
 For efficiency, Nexus apps that take care of this on-the-fly rendering are also hosted on a Content Delivery Network.
 
