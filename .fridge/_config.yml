@@ -1,0 +1,18 @@
+title: Nexus
+description: Nexus | network of extensible sources
+defaults:
+  -
+    scope:
+      path: "docs"
+    values:
+      layout: "default"
+collections:
+  docs:
+    output: true
+  demo:
+    output: true
+nexus_docs:
+  collections:
+    docs:
+      name: Documentation
+      nav_exclude: false
