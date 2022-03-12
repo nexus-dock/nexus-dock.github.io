@@ -1,11 +1,15 @@
 title: Nexus
 description: Nexus | network of extensible sources
+defaults:
+  -
+    scope:
+      path: "docs"
+    values:
+      layout: "default"
 collections:
   docs:
-    layout: base
     permalink: "/:path/"
     output: true
   demo:
-    layout: base
     permalink: "/:collection/:path/"
     output: true
