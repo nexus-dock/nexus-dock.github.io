@@ -1,3 +1,5 @@
-theme: jekyll-theme-cayman
+remote_theme: hydecorp/hydejack@v9.1.6
 title: Nexus
 description: Nexus: network of extensible sources
+plugins:
+  - jekyll-include-cache
