@@ -97,24 +97,24 @@ You're very much welcome to [contribute](https://github.com/I-is-as-I-does/Nexus
 
 ### Reader apps
 
-- *https://cdn.jsdelivr.net/gh/I-is-as-I-does/Nexus@^1.1.4/dist/js/NxFolio.js*
-- *https://cdn.jsdelivr.net/gh/I-is-as-I-does/Nexus@^1.1.4/dist/js/NxIO.js*
+- https://cdn.jsdelivr.net/gh/I-is-as-I-does/Nexus@^1.1.4/dist/js/NxFolio.js
+- https://cdn.jsdelivr.net/gh/I-is-as-I-does/Nexus@^1.1.4/dist/js/NxIO.js
 
 ### Themes
 
 For NxFolio
-- (default) *https://cdn.jsdelivr.net/gh/I-is-as-I-does/Nexus@^1.1.4/dist/css/NxFolio.min.css*
+- (default) https://cdn.jsdelivr.net/gh/I-is-as-I-does/Nexus@^1.1.4/dist/css/NxFolio.min.css
 
 For NxIO
-- (default) *https://cdn.jsdelivr.net/gh/I-is-as-I-does/Nexus@^1.1.4/dist/css/NxIO.min.css*
-- *https://cdn.jsdelivr.net/gh/I-is-as-I-does/Nexus@^1.1.4/dist/css/NxIO-alt.min.css*
+- (default) https://cdn.jsdelivr.net/gh/I-is-as-I-does/Nexus@^1.1.4/dist/css/NxIO.min.css
+- https://cdn.jsdelivr.net/gh/I-is-as-I-does/Nexus@^1.1.4/dist/css/NxIO-alt.min.css
 
 ### Languages
 
 It's very optional, as currently only used by NxIO editor app.
 
-- *en*
-- *fr*
+- en
+- fr
 
 ## Tips
 
@@ -144,14 +144,12 @@ Just make sure the new files names and dimensions are exactly as specified in th
 
 At the top of the preview pane, you'll find the previewed page url.
 
-Nexus pages urls   
-*http://your-site-name.netlify.app/nexus/filename*  
-Static pages urls   
-*http://your-site-name.netlify.app/pages/filename*  
+Nexus pages urls: *http://your-site-name.netlify.app/nexus/filename*  
+Static pages urls: *http://your-site-name.netlify.app/pages/filename*  
 
-Default Nexus page (as specified in `Settings` > `Nexus Instances`)  
+Default Nexus page (as specified in `Settings` > `Nexus Instances`):  
 *http://your-site-name.netlify.app/nexus*  
-Default Static page (as specified in `Settings` > `Static pages`)  
+Default Static page (as specified in `Settings` > `Static pages`):  
 *http://your-site-name.netlify.app/pages*  
 
 *http://your-site-name.netlify.app* will display either the default Nexus page, or the default Static page, depending on what you specified in `Settings` > `Site`.
