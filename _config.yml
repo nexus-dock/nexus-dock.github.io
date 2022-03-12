@@ -1,22 +1,11 @@
 title: Nexus
 description: Nexus | network of extensible sources
-remote_theme: just-the-docs/just-the-docs
-search_enabled: true
-color_scheme: nexus
-aux_links:
-  "Nexus on GitHub":
-    - "//github.com/I-is-as-I-does/Nexus"
-aux_links_new_tab: true
-last_edit_timestamp: false
-gh_edit_link: true
-gh_edit_link_text: "This site is open source / Improve this page"
-gh_edit_repository: "https://github.com/nexus-dock/nexus-dock.github.io"
-gh_edit_branch: "main"
-gh_edit_view_mode: "tree"
 collections:
   docs:
+    layout: base
     permalink: "/:path/"
     output: true
   demo:
+    layout: base
     permalink: "/:collection/:path/"
     output: true
