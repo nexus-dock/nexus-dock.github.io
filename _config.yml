@@ -11,3 +11,8 @@ collections:
     output: true
   demo:
     output: true
+nexus_docs:
+  collections:
+    docs:
+      name: Documentation
+      nav_exclude: false
