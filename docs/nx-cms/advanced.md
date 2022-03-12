@@ -1,5 +1,6 @@
 ---
 title: "Advanced"
+permalink: /nx-cms/advanced/
 parent: "Nexus Cms"
 nav_order: 4
 ---

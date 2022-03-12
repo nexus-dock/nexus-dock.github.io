@@ -1,5 +1,6 @@
 ---
 title: "Install"
+permalink: /nx-cms/install/
 parent: "Nexus Cms"
 nav_order: 1
 ---

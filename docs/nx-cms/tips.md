@@ -1,5 +1,6 @@
 ---
 title: "Tips"
+permalink: /nx-cms/tips/
 parent: "Nexus Cms"
 nav_order: 3
 ---

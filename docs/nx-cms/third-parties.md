@@ -1,5 +1,6 @@
 ---
 title: "About Third Parties"
+permalink: /nx-cms/third-parties/
 parent: "Nexus Cms"
 nav_order: 5
 ---

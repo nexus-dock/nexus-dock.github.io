@@ -1,5 +1,6 @@
 ---
 title: "Nexus Options"
+permalink: /nx-cms/options/
 parent: "Nexus Cms"
 nav_order: 2
 ---

@@ -8,8 +8,6 @@ defaults:
       layout: "default"
 collections:
   docs:
-    permalink: "/:path/"
     output: true
   demo:
-    permalink: "/:collection/:path/"
     output: true
