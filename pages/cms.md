@@ -124,8 +124,8 @@ It's very optional, as currently only used by NxIO editor app.
 
 For each collections, `Settings`, `Nexus instances` and `Static pages`, you'll have a **form** a the left side, and a **live preview** on the right.  
 
-The `Settings` > `Site` preview might not be immediately up-to-date if the Netlify status badge indicates that a build is ongoing.   
-In which case: wait a moment, then either refresh the page or click the eye icon to toggle the preview pane.
+If you've just published some changes, then reloaded or left the `/admin` page, the `Settings` > `Site` preview might not be immediately up-to-date.   
+In which case, you can simply wait a dozen of seconds, then click the eye icon to toggle off then on again the preview panel.
 > You can find more info on the build process in the [11ty](#11ty) section.
 
 If a Nexus instance preview is displaying `– /–`: 
