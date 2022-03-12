@@ -1,10 +1,8 @@
 ---
-layout: page
+layout: base
 title: "Nexus Cms"
 permalink: /nx-cms/
 ---
-
-<nav>
 
 - [Install](#install)
   - [I'm an old dog](#im-an-old-dog)
@@ -36,8 +34,6 @@ permalink: /nx-cms/
   - [11ty](#11ty)
     - [Build time](#build-time)
 - [Repository](#repository)
-
-</nav>
 
 # Nexus Cms
 
