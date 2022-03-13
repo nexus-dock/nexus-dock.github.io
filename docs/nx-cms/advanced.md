@@ -6,8 +6,7 @@ nav_order: 4
 ---
 # Advanced
 
-1. TOC
-   {:toc}
+1. TOC {:toc}
 
 ## Switch to Private
 
