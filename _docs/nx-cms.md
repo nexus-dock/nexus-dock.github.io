@@ -1,46 +1,67 @@
 ---
-layout: base
 title: "Nexus Cms"
-permalink: /nx-cms/
+permalink: /docs/cms/
 ---
+# CMS
 
-- [Install](#install)
+Setup a Nexus powered website under 1 minute.  
+
+<hr class="nav-start">
+
+- [Overview](#overview)
+  - [Features](#features)
+  - [Screenshots](#screenshots)
+- [Installation](#installation)
   - [I'm an old dog](#im-an-old-dog)
   - [Step-by-step please](#step-by-step-please)
-- [Nexus Options](#nexus-options)
-  - [Reader apps](#reader-apps)
-  - [Themes](#themes)
-  - [Languages](#languages)
-- [Tips](#tips)
+- [User Guide](#user-guide)
+  - [Options](#options)
   - [Live Preview](#live-preview)
   - [Favicons](#favicons)
   - [Urls](#urls)
   - [Markdown](#markdown)
   - [Navigation](#navigation)
-- [Advanced](#advanced)
+- [Advanced Tips](#advanced-tips)
   - [Switch to Private](#switch-to-private)
   - [Run Locally](#run-locally)
-    - [Setup](#setup)
-    - [Serve](#serve)
   - [Host anywhere](#host-anywhere)
   - [Make it yours](#make-it-yours)
-- [About Third Parties](#about-third-parties)
+- [Third Parties](#third-parties)
   - [GitHub](#github)
-    - [Storage limitations](#storage-limitations)
   - [Netlify](#netlify)
-    - [How it works](#how-it-works)
-    - [How it meshes with Nexus](#how-it-meshes-with-nexus)
   - [Netlify CMS](#netlify-cms)
   - [11ty](#11ty)
-    - [Build time](#build-time)
 - [Repository](#repository)
 
-# Nexus Cms
+## Overview
 
-A free, 1 minute setup solution to create and auto-deploy Nexus instances... and static pages!  
-Under the hood, Nexus CMS makes use of 11ty to generate files, and Netlify CMS for a user-friendly backend.  
+### Features
 
-## Install
+- Nexus authoring 
+
+Create and edit Nexus instances, with the reader app and theme of your choice.  
+The web pages and Nexus .json source files are automatically built and deployed.
+
+- Static pages
+  
+Additionnally create and edit custom web pages, with any kind of content.  
+Rich text editor and markdown mode. Support for all markdown/class-less themes. 
+
+- Live previews
+- Media manager 
+- Navigation widgets
+  
+Free, open source, and extensible.
+  
+> Under the hood, Nexus CMS makes use of 11ty to generate files, and Netlify CMS for a user-friendly backend. 
+
+### Screenshots
+
+<img class="bordered" src="/img/nx-cms-backend.png" alt="Nexus Cms Backend">
+<img class="bordered" src="/img/nx-cms-backend-md.png" alt="Nexus Cms Backend - Markdown Pages">
+
+
+## Installation
 
 Some steps can not be automated, but it's super easy and should take less than 1min. 
 
@@ -50,81 +71,83 @@ Some steps can not be automated, but it's super easy and should take less than 1
 
 - Click the `Deploy to Netlify` button and follow steps.
 - In the Netlify site settings, setup `Netlify Identity`, `GitHub OAuth` and `Git Gateway`.
-- Go to *http://your-site-name.netlify.app/admin* > `Settings` > `Site`, enter your site url and publish.
+- Go to `http://your-site-name.netlify.app/admin` > `Settings` > `Site`, enter your site url and publish.
 
 ### Step-by-step please
 
-If you're unfamiliar with GitHub or Netlify, [About Third Parties](#about-third-parties) is there for you.
+If you're unfamiliar with GitHub or Netlify, the [Third Parties](#third-parties) section is there for you.
 
-- Click the `Deploy to Netlify` button.  
+#### One-click Deploy
+
+- Click the `Deploy to Netlify` button.
   You will be redirected to Netlify.
-
-- Next, you'll be asked to connect to GitHub.   
+- Next, you'll be asked to connect to GitHub.  
   Create an account if you do not already have one.  
-  When prompted, click **Authorize netlify**.
-
+  When prompted, click `Authorize netlify`.
 - Once you're back to the Netlify setup page, choose your repository name.  
-  Click **Save and Deploy**.
+  Click `Save and Deploy`.
+
+#### Configure Netlify
 
 - You should now see your Netlify site dashboard.  
   Go to `Site settings`. 
-
 - In the `General` tab: change your site name (unless you fancy the random one!).  
-  Your Nexus website will be accessible at *http://your-site-name.netlify.app*.
+  Your Nexus website will be accessible at `http://your-site-name.netlify.app`.
   > You can also set up a custom domain if you wish to, going to the the `Domain management` tab.
-
 - Now, let's activate authentication.  
-  In the `Identity` tab: click **Enable Identity**, then:
-  - in the `Registration preferences` section: click **Edit settings** and select **Invite only**.
-  - in the `External providers` section: click **Add provider** > **GitHub** > **Use default configuration**.
-  - finally scroll down to the `Service` > `Git Gateway` section, and click **Enable Git Gateway**.	
-  
+  In the `Identity` tab: click `Enable Identity`.
+  - In the `Registration preferences` section: click `Edit settings` and select `Invite only`.
+  - In the `External providers` section: click `Add provider` > `GitHub` > `Use default configuration`.
+  - Finally scroll down to the `Service` > `Git Gateway` section, and click `Enable Git Gateway`.	
+
+#### Setup Nexus Cms
+
 - Connect to Nexus CMS.  
-  Go to *http://your-site-name.netlify.app/admin*.  
-  Click **Login with Netlify Identity** > **Continue with GitHub**.
-  
+  Go to `http://your-site-name.netlify.app/admin`.  
+  Click `Login with Netlify Identity` > `Continue with GitHub`.
 - Last step: register your site url.  
-  On the admin page, navigate to `Settings` > `Site`.
-  In the **Url** field enter your newly created netlify domain *http://your-site-name.netlify.app*.  
-  Click **Publish** > **Publish now**, and you're done!
+  On the admin page, navigate to `Settings` > `Site`.  
+  In the `Url` field enter your newly created Netlify domain `http://your-site-name.netlify.app`.  
+  Click `Publish` > `Publish now`, and you're done!
   > If you did setup a custom domain, enter your domain url instead.
 
-## Nexus Options
+## User Guide
 
-`Settings` > `Nexus instances`  
+### Options
+
+`Settings` > `Nexus`  
 Currently available apps, themes and languages.  
 You're very much welcome to [contribute](https://github.com/I-is-as-I-does/Nexus/blob/main/CONTRIBUTING.md)!
 
-### Reader apps
+#### Reader apps
 
-- https://cdn.jsdelivr.net/gh/I-is-as-I-does/Nexus@^1.1.4/dist/js/NxFolio.js
-- https://cdn.jsdelivr.net/gh/I-is-as-I-does/Nexus@^1.1.4/dist/js/NxIO.js
+- `https://cdn.jsdelivr.net/gh/I-is-as-I-does/Nexus@^1.1.4/dist/js/NxFolio.js`
+- `https://cdn.jsdelivr.net/gh/I-is-as-I-does/Nexus@^1.1.4/dist/js/NxIO.js`
 
-### Themes
+#### Themes
 
-For NxFolio
-- (default) https://cdn.jsdelivr.net/gh/I-is-as-I-does/Nexus@^1.1.4/dist/css/NxFolio.min.css
+- NxFolio [default] `https://cdn.jsdelivr.net/gh/I-is-as-I-does/Nexus@^1.1.4/dist/css/NxFolio.min.css`
+- NxIO [default] `https://cdn.jsdelivr.net/gh/I-is-as-I-does/Nexus@^1.1.4/dist/css/NxIO.min.css`
+- NxIO [alt] `https://cdn.jsdelivr.net/gh/I-is-as-I-does/Nexus@^1.1.4/dist/css/NxIO-alt.min.css`
 
-For NxIO
-- (default) https://cdn.jsdelivr.net/gh/I-is-as-I-does/Nexus@^1.1.4/dist/css/NxIO.min.css
-- https://cdn.jsdelivr.net/gh/I-is-as-I-does/Nexus@^1.1.4/dist/css/NxIO-alt.min.css
+#### Languages
 
-### Languages
+It's very optional, as currently only used by NxIO on-the-go editor app.
 
-It's very optional, as currently only used by NxIO editor app.
+- `en`
+- `fr`
 
-- en
-- fr
-
-## Tips
 
 ### Live Preview
 
-For each collections, `Settings`, `Nexus instances` and `Static pages`, you'll have a **form** a the left side, and a **live preview** on the right.  
+For each collections, `Settings`, `Nexus` and `Pages`, you'll have a **form** a the left side, and a **live preview** on the right.  
 
-If you've just published some changes, then reloaded or left the `/admin` page, the `Settings` > `Site` preview might not be immediately up-to-date.   
-In which case, you can simply wait a dozen of seconds, then click the eye icon to toggle off then on again the preview panel.
+#### Front page
+
+If you've just published some changes, then reloaded or left the `/admin` page, the `Settings` > `Site` preview might not be immediately up-to-date. In which case, you can simply wait a dozen of seconds, then click the eye icon to toggle off then on again the preview panel.
 > You can find more info on the build process in the [11ty](#11ty) section.
+
+#### Nexus instances
 
 If a Nexus instance preview is displaying `– /–`: 
 - either the site url your entered if `Settings` > `Site` is wrong;
@@ -142,17 +165,23 @@ Just make sure the new files names and dimensions are exactly as specified in th
 
 ### Urls
 
-At the top of the preview pane, you'll find the previewed page url.
+In the `admin` section, urls are displayed at the top of the preview panel.
 
-Nexus pages urls: *http://your-site-name.netlify.app/nexus/filename*  
-Static pages urls: *http://your-site-name.netlify.app/pages/filename*  
+#### Specific pages
 
-Default Nexus page (as specified in `Settings` > `Nexus Instances`):  
-*http://your-site-name.netlify.app/nexus*  
-Default Static page (as specified in `Settings` > `Static pages`):  
-*http://your-site-name.netlify.app/pages*  
+- Nexus pages  
+`http://your-site-name.netlify.app/nexus/filename`  
+- Static pages  
+`http://your-site-name.netlify.app/pages/filename`  
 
-*http://your-site-name.netlify.app* will display either the default Nexus page, or the default Static page, depending on what you specified in `Settings` > `Site`.
+#### Default pages
+
+- Default Nexus page (as specified in `Settings` > `Nexus`)  
+`http://your-site-name.netlify.app/nexus`  
+- Default Static page (as specified in `Settings` > `Pages`)  
+`http://your-site-name.netlify.app/pages`  
+- Front page (will display either the default Nexus page, or the default Static page, as specified in `Settings` > `Site`)
+`http://your-site-name.netlify.app` 
 
 ### Markdown
 
@@ -167,22 +196,31 @@ You can toggle between the two modes on the content widget.
 You can easily create a menu listing your Static pages or Nexus instances:
 
 - edit or create a new Static page;
-- on the Content widget, click the `+` icon, then `Collection index`;
-- select either **Nexus instances** or **Static pages** and check the result in the live preview. 
+- on the `Content` widget, click the `+` icon, then `Collection index`;
+- select either `Nexus instances` or `Static pages` and check the result in the live preview. 
 
 To have both lists, simply add another `Collection index` block.  
 
 For a more custom menu, or to add a single link, you can use the `Nexus instance link` and `Static page link` blocks.
 
-## Advanced
+
+## Advanced Tips
 
 ### Switch to Private
 
 By default the created repository will be public.  
-You can change it to private, but will need to regenerate your Netlify token.  
-- Go to your Netlify site dashboard,
-- navigate to `Site settings` > `Identity` > `Services` > `Git Gateway`,
-- click **Edit settings** and then **Generate access token in GitHub**.
+You can change it to private.
+> Your website will still be publicly accessible.
+
+- Go to your Nexus CMS repository on GitHub.
+- Click on `Settings`, and in the `General` tab scroll down to `Danger Zone`.
+- Click `Change visibility` and select `Make private`.
+
+You will then need to regenerate your Netlify token.  
+
+- Go to your Netlify site dashboard.
+- Navigate to `Site settings` > `Identity` > `Services` > `Git Gateway`.
+- Click `Edit settings` and finally `Generate access token in GitHub`.
 
 ### Run Locally
 
@@ -218,7 +256,7 @@ For a Nexus reader app to be compatible with the Nexus CMS live preview feature,
 - listen to change events on the `#Nexus` element 
 - then retrieve and validate the content of `data-srcdoc`.
 
-## About Third Parties
+## Third Parties
 
 ### GitHub
 
@@ -234,7 +272,7 @@ This is where your source files will be stored.
 
 - Your repository should not exceed 1GB in size.  
 - Each file must not exceed 25MB; this limit is stretched to 50MB if you're using git commands.  
-- Since Nexus CMS generates a website, a 2MB limit is implemented for video and audio files, 500KB for images.
+- Since Nexus CMS generates a website, a 2MB limit is implemented for media files. Images should not actually exceed 500KB.
     
 You are still free to store your media files on another server or platform, as long as you can provide a working direct access url.  
 Nexus apps also support YouTube, Vimeo and Soundcloud urls.
@@ -246,8 +284,8 @@ Their free tier is perfectly fine for a Nexus CMS website.
 
 #### How it works
 
-- Netlify connects to a repository containing source code,
-- runs a build process to pre-render files each time content gets updated,
+- Netlify connects to a repository containing source code
+- runs a build process to pre-render files each time content gets updated
 - then distributes the optimized files on a Content Delivery Network.
 
 > A Content Delivery Network is a geographically distributed network of proxy servers.  
@@ -255,11 +293,10 @@ Their free tier is perfectly fine for a Nexus CMS website.
      
 #### How it meshes with Nexus 
 
-Since the whole principle of Nexus is to connect your content to other live, self-hosted Nexus instances, the Nexus part of the page is still built on-the-fly, and not pre-rendered.  
-
+Since the whole principle of Nexus is to connect your content to other live, self-hosted Nexus instances, the Nexus part of the page is still built on-the-fly, and not pre-rendered. 
 The focus of Nexus CMS is more on the *self-hosted* matter. This solution offers a simple, seamless way to create, edit and auto-deploy Nexus instances.  
 
-For efficiency, Nexus apps that take care of this on-the-fly rendering are also hosted on a Content Delivery Network.
+> For efficiency, Nexus apps that take care of this on-the-fly rendering are also hosted on a Content Delivery Network.
 
 ### Netlify CMS
 
@@ -288,4 +325,4 @@ If you have a lot of data though, it might be a bit longer.
 
 ## Repository
 
-[github.com/I-is-as-I-does/Nexus-CMS](https://github.com/I-is-as-I-does/Nexus-CMS)  
+[github.com/I-is-as-I-does/Nexus-CMS](https://github.com/I-is-as-I-does/Nexus-CMS) 

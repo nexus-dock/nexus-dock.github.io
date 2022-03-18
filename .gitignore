@@ -8,3 +8,9 @@ node_modules/*
 .git/*
 package-lock.json
 .todo.txt
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
+.fridge/*
