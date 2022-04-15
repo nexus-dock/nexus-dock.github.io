@@ -31,7 +31,7 @@ It can be hosted anywhere, as long as the server allows for external requests.
 
 ### Run it Everywhere
 
-The Nexus App is hosted on a Content Delivery Network and run in browser.  
+The Nexus App is hosted on a Content Delivery Network and runs in-browser.  
 It can be embedded in any html page.
 
 ### Shapeshift Anything
