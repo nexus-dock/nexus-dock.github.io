@@ -37,5 +37,9 @@ Paste the code snippet in the text area of the block.
 
 <img class="bordered" src="https://nexus-dock.github.io/img/wp-add-code-block.gif" alt="Paste Snippet in Wordpress"> 
 
+### How It Works
+
+Learn more over [here](/docs/data-flow/).
+
 
 

@@ -353,8 +353,7 @@ img.bordered {
 
 .schema td {
   width: 150px;
-  ;
-  border-left: none;
+  border: none;
   background-color: #ffffff;
   text-align: center;
   color: #000000;
