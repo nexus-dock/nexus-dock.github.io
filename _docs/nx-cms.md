@@ -121,14 +121,14 @@ You're very much welcome to [contribute](https://github.com/I-is-as-I-does/Nexus
 
 #### Reader apps
 
-- `https://cdn.jsdelivr.net/gh/I-is-as-I-does/Nexus@^1.1.4/dist/js/NxFolio.js`
-- `https://cdn.jsdelivr.net/gh/I-is-as-I-does/Nexus@^1.1.4/dist/js/NxIO.js`
+- `https://cdn.jsdelivr.net/gh/I-is-as-I-does/Nexus@latest/dist/js/NxFolio.js`
+- `https://cdn.jsdelivr.net/gh/I-is-as-I-does/Nexus@latest/dist/js/NxIO.js`
 
 #### Themes
 
-- NxFolio [default] `https://cdn.jsdelivr.net/gh/I-is-as-I-does/Nexus@^1.1.4/dist/css/NxFolio.min.css`
-- NxIO [default] `https://cdn.jsdelivr.net/gh/I-is-as-I-does/Nexus@^1.1.4/dist/css/NxIO.min.css`
-- NxIO [alt] `https://cdn.jsdelivr.net/gh/I-is-as-I-does/Nexus@^1.1.4/dist/css/NxIO-alt.min.css`
+- NxFolio [default] `https://cdn.jsdelivr.net/gh/I-is-as-I-does/Nexus@latest/dist/css/NxFolio.min.css`
+- NxIO [default] `https://cdn.jsdelivr.net/gh/I-is-as-I-does/Nexus@latest/dist/css/NxIO.min.css`
+- NxIO [alt] `https://cdn.jsdelivr.net/gh/I-is-as-I-does/Nexus@latest/dist/css/NxIO-alt.min.css`
 
 #### Languages
 
